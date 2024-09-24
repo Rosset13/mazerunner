@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Center all content inside the header */
+    align-items: center;
+    width: 100%;
+    position: relative; /* Ensures the navigation is centered relative to header */
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2e7d32;
+    position: absolute; /* Positioning logo to the left */
+    left: 20px;
+}
+
+nav {
+    margin-left: 60px; /* Adjust margin to position nav in the center */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2e7d32;
+}
+
+/* Hero */
+.hero {
+    margin-top: 80px;
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #2e7d32;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #4f4f4f;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article h3 {
+    font-size: 24px;
+    color: #4f4f4f;
+}
+
+article h4 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #2e7d32;
+}
+
+article p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+    text-align: justify;
+}
+
+/* Resources */
+#resources ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#resources ul li {
+    margin: 10px 0;
+}
+
+#resources ul li a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+#resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1b5e20;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
